@@ -46,7 +46,7 @@
                <url>http://192.168.10.212:8081/nexus/content/repositories/releases/</url>
             </repository>
             <snapshotRepository>
-               <idsnapshots></id>
+               <id>snapshots></id>
                <name>Snapshots</name>
                <url>http://192.168.10.212:8081/nexus/content/repositories/snapshots/</url>
            </snapshotRepository>
