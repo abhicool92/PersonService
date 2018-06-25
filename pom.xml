@@ -4,7 +4,7 @@
 	<groupId>pl.piomin.services</groupId>
 	<artifactId>person-service</artifactId>
 	<version>1.0-SNAPSHOT</version>
-
+        <packaging>war</packaging>
 	<properties>
 		<java.version>1.8</java.version>
 	</properties>
@@ -41,15 +41,15 @@
 	</build>
 	<distributionManagement>
         <repository>
-            <id>deployment</id>
-            <name>Internal Releases</name>
-            <url>http://192.168.10.155:8081/repository/SAMPLE-REL/</url>
+            <id>releases</id>
+            <name>Releases</name>
+            <url>http://192.168.10.212:8081/nexus/content/repositories/releases/</url>
         </repository>
         <snapshotRepository>
-            <id>deployment</id>
-            <name>Internal Snapshot Releases</name>
-            <url>http://192.168.10.155:8081/repository/SAMPLE-SNAP/</url>
+            <idsnapshots></id>
+            <name>Snapshots</name>
+            <url>http://192.168.10.212:8081/nexus/content/repositories/snapshots/</url>
         </snapshotRepository>
     </distributionManagement>
-<packaging>war</packaging>
+
 </project>
